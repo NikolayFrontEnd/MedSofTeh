@@ -1,4 +1,5 @@
 import Description from './compontets/Description/Description'
+import Footer from './compontets/Footer/Footer'
 import Header from './compontets/Header/Header'
 import Main from './compontets/Main/Main'
 function App() {
@@ -9,6 +10,7 @@ function App() {
    <Header />
     <Main />
     <Description/>
+    <Footer/>
     </>
   )
 }

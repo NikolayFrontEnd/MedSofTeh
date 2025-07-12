@@ -1,0 +1,48 @@
+    .blockMainFooter{
+    display: block;
+    height: 200px;
+    width: 100%;
+    background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+    margin-top: 50px;
+    position: relative;
+    }
+    .phot{
+        position: absolute;
+            bottom: 5px;
+    left: 5px;
+    }
+    .logoContainer2{
+        padding-left: 150px;
+        padding-top: 50px;
+            font-family: 'Mulish', sans-serif;
+font-weight: 700;
+font-size: 24px;
+letter-spacing: 0%;
+color: rgba(255, 255, 255, 1);
+display: flex;
+align-items: center;
+    }
+    .logoText2{
+padding-left: 20px;
+
+    }
+    .logoIcon2{
+            width: 41px;
+    height: 41px;
+    border-radius: 50%;
+        justify-content: center;
+    align-items: center;
+    background: white;
+ color:#458FF6;
+    display: flex;
+    }
+    .desc{
+        color: rgba(255, 255, 255, 1);
+padding-left: 150px;
+        padding-top: 20px;
+    }
+    .ourComp{
+                color: rgba(255, 255, 255, 1);
+padding-left: 150px;
+padding-top: 20px;
+    }
