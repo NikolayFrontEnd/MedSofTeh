@@ -1,5 +1,10 @@
 import styles from "./Description.module.css"
 import photo from "../../assets/График.png"
+import photo2 from '../../assets/trafalgar-illustration sec03 1.png';
+import photo3 from '../../assets/AIreport.jpeg';
+import photo4 from '../../assets/p1.jpeg';
+import photo5 from '../../assets/p5.jpeg';
+
 const Description = () => {
     
     return (
@@ -31,19 +36,19 @@ const Description = () => {
       Формируйте медицинские отчеты и заключения автоматически. Система поддерживает экспорт в различные форматы для скачивания и печати.
     </div>
   </div>
-  <div><img src={photo} /></div>
+  <div><img className={styles.photSize} src={photo3} /></div>
 </div>
 
 
 
 
 <div className={styles.descriptionBlockAbout}>
-  <div><img src={photo} /></div>
+  <div ><img  src={photo2} /></div>
   <div className={styles.rightBlock}>     
-    <div className={styles.improveWords}>Полный профиль пациента</div>
+    <div className={styles.improveWords}>Оптимизация регистратуры</div>
     <div className={styles.line}></div>
     <div className={styles.descWords}>
-      Вся история обращений, диагнозы, назначения и документы — в одном месте. Врачи получают полный контекст ещё до начала приёма.
+      Регистраторы тратят меньше времени на рутину: запись, подтверждения и обработка документов автоматизированы и доступны в онлайн формате
     </div>
   </div>
 </div>
@@ -57,7 +62,7 @@ const Description = () => {
       Пациенты записываются через удобный интерфейс, видят свободные окна врача и выбирают подходящее время. Без звонков и очередей.
     </div>
   </div>
-  <div><img src={photo} /></div>
+  <div><img className={styles.photSize} src={photo4} /></div>
 </div>
 
 
@@ -75,13 +80,13 @@ const Description = () => {
 
 <div className={styles.descriptionBlockAbout}>
   <div className={styles.rightBlock}>     
-    <div className={styles.improveWords}>Оптимизация регистратуры</div>
+    <div className={styles.improveWords}>Полный профиль пациента</div>
     <div className={styles.line}></div>
     <div className={styles.descWords}>
-      Регистраторы тратят меньше времени на рутину: запись, подтверждения и обработка документов автоматизированы.
+      Вся история обращений, диагнозы, назначения и документы — в одном месте. Врачи получают полный контекст ещё до начала приёма.
     </div>
   </div>
-  <div><img src={photo} /></div>
+  <div><img src={photo5} className={styles.photSize} /></div>
 </div>
 
         </>
@@ -89,3 +94,4 @@ const Description = () => {
 }
 
 export default Description;
+
