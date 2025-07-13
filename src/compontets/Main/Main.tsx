@@ -1,6 +1,16 @@
 import styles from "./Main.module.css";
 import photo from "../../assets/e7c8a652b4ff26a094731214f377e182c2504450.png";
-export function Main() {
+import type { RefObject } from "react";
+
+interface MainProps {
+    descriptionRef: RefObject<HTMLDivElement | null>;
+}
+
+export function Main({ descriptionRef }: MainProps) {
+
+    const scrollToDescription = () => {
+        descriptionRef.current?.scrollIntoView({ behavior: 'smooth' });
+    };
     
     return (
         <>   
@@ -15,7 +25,7 @@ export function Main() {
 Наш продукт — цифровое решение для частных клиник.
 Разрабатываем веб-приложение, упрощающие работу врачей и взаимодействие с пациентами.        
 </div>
-<div className = {styles.buttonDetails}>Подробнее</div>
+<div className = {styles.buttonDetails} onClick={scrollToDescription}>Подробнее</div>
         </div>
 
         <div >

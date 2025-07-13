@@ -1,3 +1,8 @@
+
+
+
+
+
 .mainBlock{
     margin-top: 15px;
     margin-left: 150px;
@@ -54,4 +59,150 @@ cursor: pointer;
 .buttonDetails:hover
 {
 background-color:  #61a0f9;
+}
+
+/* Планшеты */
+@media (max-width: 1024px) {
+    .mainBlockContent {
+        flex-direction: column;
+        text-align: center;
+        padding: clamp(30px, 5vw, 50px) clamp(20px, 6vw, 80px);
+        gap: clamp(25px, 4vw, 40px);
+    }
+    
+    .mainBlock {
+        max-width: 100%;
+        flex: none;
+        order: 1;
+    }
+    
+    .photoSize {
+        width: clamp(250px, 50vw, 400px);
+        height: clamp(250px, 50vw, 400px);
+        order: 2;
+    }
+    
+    .descriptionWord {
+        max-width: 100%;
+    }
+}
+
+/* Мобильные устройства */
+@media (max-width: 768px) {
+    .mainBlockContent {
+        padding: 20px 15px;
+        gap: 20px;
+        min-height: 60vh;
+    }
+    
+    .mainWords {
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    
+    .descriptionWord {
+        margin-bottom: 25px;
+        text-align: center;
+    }
+    
+    .photoSize {
+        width: clamp(200px, 60vw, 300px);
+        height: clamp(200px, 60vw, 300px);
+        border-radius: 20px;
+    }
+    
+    .buttonDetails {
+        margin: 0 auto;
+        width: clamp(140px, 40vw, 180px);
+        height: clamp(40px, 10vw, 50px);
+    }
+}
+
+/* Маленькие мобильные устройства */
+@media (max-width: 480px) {
+    .mainBlockContent {
+        padding: 15px 10px;
+        gap: 15px;
+        min-height: 50vh;
+    }
+    
+    .mainWords {
+        font-size: clamp(22px, 6vw, 32px);
+        margin-bottom: 12px;
+        line-height: 1.1;
+    }
+    
+    .descriptionWord {
+        font-size: clamp(14px, 3.5vw, 18px);
+        margin-bottom: 20px;
+        line-height: 1.4;
+    }
+    
+    .photoSize {
+        width: clamp(180px, 70vw, 250px);
+        height: clamp(180px, 70vw, 250px);
+        border-radius: 15px;
+    }
+    
+    .buttonDetails {
+        width: clamp(120px, 50vw, 160px);
+        height: clamp(38px, 12vw, 45px);
+        font-size: clamp(12px, 3vw, 16px);
+    }
+}
+
+/* Очень маленькие экраны */
+@media (max-width: 320px) {
+    .mainBlockContent {
+        padding: 10px 8px;
+        gap: 12px;
+    }
+    
+    .mainWords {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    
+    .descriptionWord {
+        font-size: 10px;
+        margin-bottom: 15px;
+    }
+    
+    .photoSize {
+        width: 150px;
+        height: 150px;
+        border-radius: 10px;
+    }
+    
+    .buttonDetails {
+        width: 130px;
+        height: 36px;
+        font-size: 10px;
+    }
+}
+
+
+
+/* Ландшафтная ориентация на мобильных */
+@media (max-width: 768px) and (orientation: landscape) {
+    .mainBlockContent {
+        flex-direction: row;
+        min-height: 50vh;
+        gap: 20px;
+    }
+    
+    .mainBlock {
+        flex: 0 0 65%;
+        max-width: 65%;
+        text-align: left;
+    }
+    
+    .photoSize {
+        width: clamp(150px, 30vw, 220px);
+        height: clamp(150px, 30vw, 220px);
+    }
+    
+    .buttonDetails {
+        margin: 0;
+    }
 }

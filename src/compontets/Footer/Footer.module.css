@@ -1,48 +1,218 @@
-    .blockMainFooter{
+.blockMainFooter {
     display: block;
-    height: 200px;
+    height: auto;
+    min-height: 200px;
     width: 100%;
     background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
     margin-top: 50px;
     position: relative;
-    }
-    .phot{
-        position: absolute;
-            bottom: 5px;
-    left: 5px;
-    }
-    .logoContainer2{
-        padding-left: 150px;
-        padding-top: 50px;
-            font-family: 'Mulish', sans-serif;
-font-weight: 700;
-font-size: 24px;
-letter-spacing: 0%;
-color: rgba(255, 255, 255, 1);
-display: flex;
-align-items: center;
-    }
-    .logoText2{
-padding-left: 20px;
+    padding: clamp(30px, 5vw, 50px) clamp(20px, 10vw, 150px);
+    box-sizing: border-box;
+}
 
-    }
-    .logoIcon2{
-            width: 41px;
-    height: 41px;
+.phot {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    width: clamp(40px, 8vw, 80px);
+    height: auto;
+    opacity: 0.7;
+}
+
+.logoContainer2 {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 700;
+    font-size: clamp(18px, 3vw, 24px);
+    letter-spacing: 0%;
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    align-items: center;
+    margin-bottom: clamp(15px, 3vw, 20px);
+}
+
+.logoText2 {
+    padding-left: clamp(15px, 2vw, 20px);
+}
+
+.logoIcon2 {
+    width: clamp(35px, 5vw, 41px);
+    height: clamp(35px, 5vw, 41px);
     border-radius: 50%;
-        justify-content: center;
+    justify-content: center;
     align-items: center;
     background: white;
- color:#458FF6;
+    color: #458FF6;
     display: flex;
+    font-size: clamp(16px, 2.5vw, 20px);
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.desc {
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Mulish', sans-serif;
+    font-size: clamp(14px, 2.5vw, 16px);
+    line-height: 1.5;
+    margin-bottom: clamp(15px, 3vw, 20px);
+    max-width: 600px;
+    font-weight: 300;
+}
+
+.ourComp {
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Mulish', sans-serif;
+    font-size: clamp(12px, 2vw, 14px);
+    line-height: 1.4;
+    opacity: 0.8;
+    font-weight: 300;
+}
+
+/* Планшеты */
+@media (max-width: 1024px) {
+    .blockMainFooter {
+        padding: clamp(25px, 4vw, 40px) clamp(20px, 6vw, 80px);
+        min-height: 180px;
     }
-    .desc{
-        color: rgba(255, 255, 255, 1);
-padding-left: 150px;
-        padding-top: 20px;
+    
+    .phot {
+        width: clamp(35px, 6vw, 60px);
+        bottom: 8px;
+        left: 8px;
     }
-    .ourComp{
-                color: rgba(255, 255, 255, 1);
-padding-left: 150px;
-padding-top: 20px;
+}
+
+/* Мобильные устройства */
+@media (max-width: 768px) {
+    .blockMainFooter {
+        padding: 25px 20px;
+        min-height: 160px;
+        text-align: left;
     }
+    
+    .logoContainer2 {
+        justify-content: flex-start;
+        margin-bottom: 15px;
+    }
+    
+    .logoText2 {
+        padding-left: 15px;
+    }
+    
+    .logoIcon2 {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+    
+    .desc {
+        margin-bottom: 15px;
+        padding-right: 50px; /* Место для изображения */
+    }
+    
+    .ourComp {
+        padding-right: 50px; /* Место для изображения */
+    }
+    
+    .phot {
+        width: 40px;
+        bottom: 10px;
+        left: 10px;
+    }
+}
+
+/* Маленькие мобильные устройства */
+@media (max-width: 480px) {
+    .blockMainFooter {
+        padding: 20px 15px;
+        min-height: 140px;
+    }
+    
+    .logoContainer2 {
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 12px;
+    }
+    
+    .logoText2 {
+        padding-left: 12px;
+        font-size: 16px;
+    }
+    
+    .logoIcon2 {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+    
+    .desc {
+        font-size: 13px;
+        line-height: 1.4;
+        margin-bottom: 12px;
+        padding-right: 45px;
+    }
+    
+    .ourComp {
+        font-size: 11px;
+        padding-right: 45px;
+    }
+    
+    .phot {
+        width: 30px;
+        bottom: 8px;
+        left: 8px;
+    }
+}
+
+/* Очень маленькие экраны */
+@media (max-width: 320px) {
+    .blockMainFooter {
+        padding: 15px 10px;
+        min-height: 120px;
+    }
+    
+    .logoContainer2 {
+        margin-bottom: 10px;
+    }
+    
+    .logoText2 {
+        padding-left: 10px;
+        font-size: 14px;
+    }
+    
+    .logoIcon2 {
+        width: 28px;
+        height: 28px;
+        font-size: 12px;
+    }
+    
+    .desc {
+        font-size: 12px;
+        line-height: 1.3;
+        margin-bottom: 10px;
+        padding-right: 35px;
+    }
+    
+    .ourComp {
+        font-size: 10px;
+        padding-right: 35px;
+    }
+    
+    .phot {
+        width: 25px;
+        bottom: 5px;
+        left: 5px;
+    }
+}
+
+/* Для очень широких экранов */
+@media (min-width: 1400px) {
+    .blockMainFooter {
+        padding: 50px 200px;
+    }
+    
+    .phot {
+        width: 100px;
+        bottom: 10px;
+        left: 10px;
+    }
+}
