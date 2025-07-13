@@ -21,17 +21,15 @@ const Description = forwardRef<HTMLDivElement>((_props, ref) => {
         });
       },
       {
-        threshold: 0.1, // Триггер когда 10% элемента видно
-        rootMargin: '0px 0px -50px 0px' // Отступ снизу для более раннего срабатывания
+        threshold: 0.1, 
+        rootMargin: '0px 0px -50px 0px' 
       }
     );
 
-    // Наблюдаем за всеми блоками
     blockRefs.current.forEach((ref) => {
       if (ref) observer.observe(ref);
     });
 
-    // Очистка при размонтировании
     return () => observer.disconnect();
   }, []);
 
@@ -44,7 +42,7 @@ const Description = forwardRef<HTMLDivElement>((_props, ref) => {
   };
 
   return (
-    <div> {/* Добавлен обертывающий div */}
+    <div> 
       <div className={styles.mainText} ref={ref}>
         <div className={styles.quastion}>Что дает наше приложение?</div>
         <div className={styles.line}></div>
