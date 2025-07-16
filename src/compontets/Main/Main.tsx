@@ -18,7 +18,7 @@ export function Main({ descriptionRef }: MainProps) {
         <div className={styles.mainBlock}>
                     <div className={styles.mainWords}>   
 <div>Добро пожаловать на официальный сайт</div>
-<div><span className={styles.companyName}>МЕДСОТЕХ</span></div>
+<div><span className={styles.companyName}>МЕДСОФТЕХ</span></div>
 
          </div>
         <div className = {styles.descriptionWord}>
