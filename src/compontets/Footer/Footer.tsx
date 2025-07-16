@@ -14,8 +14,8 @@ const Footer = () => {
         </div>
 
 <div className={styles.desc}>Компания разрабатывает веб-приложение, упрощающие работу врачей и взаимодействие с пациентами.</div>
+<div className = {styles.desc}>Связаться с нами: sseed932@gmail.com</div>
 <div className = {styles.ourComp}>©Медсофтех 2025. Все права защищены</div>
-
 <img className = {styles.phot} src = {phot}/>
         </div>
         </>
