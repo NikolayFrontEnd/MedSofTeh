@@ -1,6 +1,6 @@
 import styles from './Footer.module.css';
 import phot from "../../assets/element2.png";
-import flag from "../../assets/ff.jpg"
+import flag from "../../assets/fr2.png"
 const Footer = () => {
     
     return (
