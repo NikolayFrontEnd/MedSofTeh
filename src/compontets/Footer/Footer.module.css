@@ -216,3 +216,9 @@
         left: 10px;
     }
 }
+.photoRusFlag{
+    margin-left: 50px;
+    width: 150px;
+    height: 100px;
+    object-fit: contain;
+}
